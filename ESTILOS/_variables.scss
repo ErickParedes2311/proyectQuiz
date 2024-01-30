@@ -1,0 +1,37 @@
+// Formateo de css
+*{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+li {
+        list-style-type: none;
+        }
+    
+a {
+        text-decoration: none;
+}
+svg{
+        width: 20px;
+}
+
+button {
+        border: none;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+        }
+    
+// colores 
+$color_primario: none;
+$color_secundario: none;
+
+// abreviasiones
+@mixin displayFlex ($align, $justify){
+        display: flex;
+        align-items: $align;
+        justify-content: $justify;
+};

@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+svg {
+  width: 20px;
+}
+
+button {
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../img/pexels-lucie-liz-3165335.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.color_fondo {
+  background-color: rgba(0, 0, 0, 0.654);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+}
+
+.inicio {
+  z-index: 100;
+}
+.inicio .text_titulo {
+  color: white;
+}/*# sourceMappingURL=style.css.map */
