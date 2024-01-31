@@ -51,6 +51,5 @@ export class Recorrerdatos{
                 return opciones === this.respuesta;
         }
 }
-// new Recorrerdatos;
 
 export const recorrer = datos.map(x => new Recorrerdatos(x.pregunta, x.opciones, x.respuesta));

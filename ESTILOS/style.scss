@@ -69,13 +69,12 @@ body{
 
 .content_quiz
 {
-        // display: none;
+        display: none;
         color: white;
         #pregunta
         {
-                font-family: variables.$pexels;
-                letter-spacing: -2px;
-                font-size: 2em
+                letter-spacing: 1px;
+                font-size: 1.8em
         }
         #opciones
         {
@@ -83,9 +82,10 @@ body{
                 flex-direction: column;
                 margin: 15px 0;
                 .boton_opciones{
+                        width: 35%;
                         margin: 10px 0;
                         font-size: 1.5em;
-                        padding: 15px 50px;
+                        padding: 15px 0px;
                         @include variables.calcularRadio(15px, 0);
                         &:hover
                         {

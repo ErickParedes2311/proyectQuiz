@@ -2,8 +2,10 @@
 import {Recorrerdatos} from './Datos.js';
 export class Contadorjuego
 {
+        // almacena desde 0 para el conteo de preguntas
         preguntas = 0;
-        contador = 0;
+        // puntuacion correcta que llevamos 
+        puntuacion = 0;
 
         /**
          * @param {Recorrerdatos[]} pregunta
@@ -15,14 +17,14 @@ export class Contadorjuego
 
         /**
          * 
-         * @returns {Recorrerdatos}
+         * @returns {Recorrerdatos} lleva el regitro de en que pregunta va 
          */
         preguntActual()
         {
                 return this.pregunta[this.preguntas];
         }
 
-        // aqui si el contador llega a numero .legenth osa all total finaliza el juego
+        // aqui si el puntuacion llega a numero .legenth osa all total finaliza el juego
         final()
         {
                 return this.pregunta.length === this.preguntas;
@@ -33,10 +35,13 @@ export class Contadorjuego
          */
         contadorRespuesta(respuesta)
         {
+                console.log(respuesta);
+                // si se contesto bien se aumenta la puntuacion 
                 if (this.preguntActual().verificarRespuesta(respuesta))
                 {
-                        this.contador++;
+                        this.puntuacion++;
                 }
+                // para saver en que pregunta va
                 this.preguntas++;
         }
 

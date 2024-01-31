@@ -90,12 +90,12 @@ body {
 }
 
 .content_quiz {
+  display: none;
   color: white;
 }
 .content_quiz #pregunta {
-  font-family: "Press Start 2P", system-ui;
-  letter-spacing: -2px;
-  font-size: 2em;
+  letter-spacing: 1px;
+  font-size: 1.8em;
 }
 .content_quiz #opciones {
   display: flex;
@@ -105,9 +105,10 @@ body {
   margin: 15px 0;
 }
 .content_quiz #opciones .boton_opciones {
+  width: 35%;
   margin: 10px 0;
   font-size: 1.5em;
-  padding: 15px 50px;
+  padding: 15px 0px;
   border-radius: 15px;
 }
 .content_quiz #opciones .boton_opciones:hover {
