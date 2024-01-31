@@ -27,7 +27,8 @@ button {
     
 // colores 
 $color_primario: none;
-$color_secundario: none;
+$color_seleccionar: #27e634;;
+$pexels: 'Press Start 2P', system-ui;
 
 // abreviasiones
 @mixin displayFlex ($align, $justify){

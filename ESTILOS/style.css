@@ -89,6 +89,37 @@ body {
   color: white;
 }
 
+.content_quiz {
+  color: white;
+}
+.content_quiz #pregunta {
+  font-family: "Press Start 2P", system-ui;
+  letter-spacing: -2px;
+  font-size: 2em;
+}
+.content_quiz #opciones {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 15px 0;
+}
+.content_quiz #opciones .boton_opciones {
+  margin: 10px 0;
+  font-size: 1.5em;
+  padding: 15px 50px;
+  border-radius: 15px;
+}
+.content_quiz #opciones .boton_opciones:hover {
+  background-color: #27e634;
+  color: white;
+  box-shadow: 3px 3px 3px -1px #ffffff;
+}
+.content_quiz #progreso {
+  text-align: center;
+  font-size: 1em;
+}
+
 .volver_inicio {
   display: none;
   position: absolute;

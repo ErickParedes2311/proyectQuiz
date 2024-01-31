@@ -25,7 +25,7 @@ body{
         .text_titulo
         {
                 color: white;
-                font-family: 'Press Start 2P', system-ui;
+                font-family: variables.$pexels;
                 letter-spacing: 15px;
                 margin-bottom: 50px;
         }
@@ -53,7 +53,7 @@ body{
                 padding: 10px 15px;
                 @include variables.calcularRadio(10px, 0);
                 margin: 50px auto 0 auto;
-                font-family: 'Press Start 2P', system-ui;
+                font-family: variables.$pexels;
                 .mando_icono
                 {
                         width: 40px;
@@ -61,7 +61,7 @@ body{
                 }
                 &:hover
                 {
-                        background-color: #27e634;
+                        background-color: variables.$color_seleccionar;
                         color: white;
                 }
         }
@@ -70,6 +70,37 @@ body{
 .content_quiz
 {
         // display: none;
+        color: white;
+        #pregunta
+        {
+                font-family: variables.$pexels;
+                letter-spacing: -2px;
+                font-size: 2em
+        }
+        #opciones
+        {
+                @include variables.displayFlex(center, center);
+                flex-direction: column;
+                margin: 15px 0;
+                .boton_opciones{
+                        margin: 10px 0;
+                        font-size: 1.5em;
+                        padding: 15px 50px;
+                        @include variables.calcularRadio(15px, 0);
+                        &:hover
+                        {
+                                background-color:  variables.$color_seleccionar;
+                                color: white;
+                                box-shadow: 3px 3px 3px -1px #ffffff;
+                        }
+                }
+                
+        }
+        #progreso
+        {
+                text-align: center;
+                font-size: 1em;
+        }
 }
 
 
