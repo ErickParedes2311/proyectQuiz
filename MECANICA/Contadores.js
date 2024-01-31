@@ -35,7 +35,6 @@ export class Contadorjuego
          */
         contadorRespuesta(respuesta)
         {
-                console.log(respuesta);
                 // si se contesto bien se aumenta la puntuacion 
                 if (this.preguntActual().verificarRespuesta(respuesta))
                 {
