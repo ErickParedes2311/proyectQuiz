@@ -35,3 +35,7 @@ $color_secundario: none;
         align-items: $align;
         justify-content: $justify;
 };
+
+@mixin calcularRadio($padding, $radio){
+        border-radius: ($padding + $radio);
+}
