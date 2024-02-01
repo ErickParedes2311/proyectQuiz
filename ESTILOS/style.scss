@@ -18,6 +18,7 @@ body{
         position: fixed;
         z-index: -1;
 }
+
 .inicio
 {
         z-index: 100;
@@ -101,6 +102,20 @@ body{
                 text-align: center;
                 font-size: 1em;
         }
+}
+
+#final
+{
+        display: none;
+        background: #ffffff;
+        color: rgb(0, 0, 0);
+        padding: 50px ;
+        
+        h1, h2
+        {
+                margin: 10px;
+        }
+
 }
 
 

@@ -121,6 +121,16 @@ body {
   font-size: 1em;
 }
 
+#final {
+  display: none;
+  background: #ffffff;
+  color: rgb(0, 0, 0);
+  padding: 50px;
+}
+#final h1, #final h2 {
+  margin: 10px;
+}
+
 .volver_inicio {
   display: none;
   position: absolute;

@@ -34,12 +34,16 @@ export class UI
 
         mostrarPuntaje(A)
         {
-                const finalPuntaje = `
-                        <h1>PUNTUACIÓN</h1>
-                        <h2>Tu resultado: ${A}</h2>
-                `;
-                const elemento = document.querySelector(".content_quiz");
-                                                elemento.innerHTML = finalPuntaje;
+                const inicio = document.querySelector('.inicio');
+                                        inicio.style.display = 'none';
+                const quiz = document.querySelector('.content_quiz');
+                                        quiz.style.display = 'none';
+                const finalPuntaje = document.getElementById("final");
+                                                        finalPuntaje.style.display = "inline";
+
+                document.getElementById("resultado").innerText = A;
+
+
         }
 
         mostrarProgreso(x, y)
