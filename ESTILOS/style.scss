@@ -151,4 +151,17 @@ body{
                         letter-spacing: 1px;
                 }
         }
+        .content_quiz
+        {
+                #opciones
+                {       
+                        width: 100%;
+                        .boton_opciones{
+                                width: 50%;
+                                margin: 10px 0;
+                                padding: 10px 20px;
+                        }
+                }
+                
+        }
 }

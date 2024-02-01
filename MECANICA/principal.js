@@ -14,10 +14,6 @@
         
         volverInicio.addEventListener('click', () =>
         {
-                inicio.style.display = 'inline'; 
-                volverInicio.style.display = 'none'; 
-                quiz.style.display = 'none';  
-                final.style.display = 'none';
                 location.reload(true);
         });
 }
