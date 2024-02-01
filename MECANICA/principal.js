@@ -3,6 +3,7 @@
         const quiz = document.querySelector('.content_quiz');
         const boton = document.querySelector('.boton_comenzar');
         const volverInicio = document.querySelector('.volver_inicio');
+        const final = document.getElementById('final');
         
         boton.addEventListener('click', () =>
         {
@@ -13,6 +14,10 @@
         
         volverInicio.addEventListener('click', () =>
         {
+                inicio.style.display = 'inline'; 
+                volverInicio.style.display = 'none'; 
+                quiz.style.display = 'none';  
+                final.style.display = 'none';
                 location.reload(true);
         });
 }
@@ -53,4 +58,5 @@ function main()
         renderisado(game, ui);
         
 }
+
 main();

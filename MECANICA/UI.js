@@ -51,5 +51,6 @@ export class UI
                const progreso = document.getElementById("progreso");
                                                 progreso.innerHTML = `Pregunta: ${x} de ${y}`;
         }               
-
+    
 }
+    
