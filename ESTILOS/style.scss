@@ -25,9 +25,10 @@ body{
         position: relative;
         .text_titulo
         {
+                text-align: center;
                 color: white;
                 font-family: variables.$pexels;
-                letter-spacing: 15px;
+                letter-spacing: 5px;
                 margin-bottom: 50px;
         }
         .text_info
@@ -72,6 +73,7 @@ body{
 {
         display: none;
         color: white;
+        text-align: center;
         #pregunta
         {
                 letter-spacing: 1px;
@@ -138,3 +140,15 @@ body{
         }
 }
 
+
+
+@media (max-width: 900px) {
+        .inicio
+        {
+                .text_titulo
+                {
+                        font-size: 1.8em;
+                        letter-spacing: 1px;
+                }
+        }
+}

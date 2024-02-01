@@ -51,9 +51,10 @@ body {
   position: relative;
 }
 .inicio .text_titulo {
+  text-align: center;
   color: white;
   font-family: "Press Start 2P", system-ui;
-  letter-spacing: 15px;
+  letter-spacing: 5px;
   margin-bottom: 50px;
 }
 .inicio .text_info {
@@ -92,6 +93,7 @@ body {
 .content_quiz {
   display: none;
   color: white;
+  text-align: center;
 }
 .content_quiz #pregunta {
   letter-spacing: 1px;
@@ -145,4 +147,11 @@ body {
 .volver_inicio .boton_inicio:hover {
   background-color: #27e634;
   color: white;
+}
+
+@media (max-width: 900px) {
+  .inicio .text_titulo {
+    font-size: 1.8em;
+    letter-spacing: 1px;
+  }
 }/*# sourceMappingURL=style.css.map */
